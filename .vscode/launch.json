@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "P81",
+            "request": "launch",
+            "mainClass": "P81",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P21",
+            "request": "launch",
+            "mainClass": "P21",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P22",
+            "request": "launch",
+            "mainClass": "P22",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P31",
+            "request": "launch",
+            "mainClass": "P31",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P32",
+            "request": "launch",
+            "mainClass": "P32",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P41",
+            "request": "launch",
+            "mainClass": "P41",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P42",
+            "request": "launch",
+            "mainClass": "P42",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P51",
+            "request": "launch",
+            "mainClass": "P51",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P52",
+            "request": "launch",
+            "mainClass": "P52",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P61",
+            "request": "launch",
+            "mainClass": "P61",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P62",
+            "request": "launch",
+            "mainClass": "P62",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P63",
+            "request": "launch",
+            "mainClass": "P63",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P71",
+            "request": "launch",
+            "mainClass": "P71",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "P72",
+            "request": "launch",
+            "mainClass": "P72",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "p1",
+            "request": "launch",
+            "mainClass": "p1",
+            "projectName": "SKOLE_e7f84216"
+        }
+    ]
+}

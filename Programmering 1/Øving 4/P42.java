@@ -1,4 +1,3 @@
-
 public class P42 {
     public static void main(String[] args) {
         spiller A = new spiller(0);
