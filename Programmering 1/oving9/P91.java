@@ -6,7 +6,7 @@ public class P91 {
         Scanner S = new Scanner(System.in);
         boolean run = true;
         System.out.println("Hei velkommen til Student registeret");
-        List<Student> studenter = new ArrayList<Student>();
+        OppgaveOversikt studenter = new OppgaveOversikt();
         while (run) {
             System.out.println("Her er dine valg:");
             System.out.println("1: Registrer ny Student");
@@ -17,25 +17,16 @@ public class P91 {
             int valg = Integer.parseInt(S.nextLine());
             switch (valg) {
                 case 1:
-                    System.out.println("Registrer ny Student:");
-                    System.out.println("Navn:");
-                    String navn = S.nextLine();
-                    System.out.println("Oppgaver gjort:");
-                    int oppg = Integer.parseInt(S.nextLine());
-                    Student s = new Student();
-                    s.antOppg = oppg;
-                    s.Navn = navn;
-                    studenter.add(s);
-
+                    studenter.addStudent(S);
                     break;
                 case 2:
-                    
+                    studenter.fintAntOppg(S);
                     break;
                 case 3:
-                    
+                    studenter.getAntStud();
                     break;
                 case 4:
-                    
+                    studenter.increaseAntOppg(S);
                     break;
                 case 5:
                     run = false;
@@ -52,6 +43,11 @@ public class P91 {
     public static class Student {
         private String Navn;
         private int antOppg;
+
+        public Student(String navn, int antOppg) {
+            this.Navn = navn;
+            this.antOppg = antOppg;
+        }
 
         public String getNavn() {
             return Navn;
@@ -71,9 +67,44 @@ public class P91 {
     public static class OppgaveOversikt {
         private List<Student> studenter;
         private int antStud;
+        public OppgaveOversikt() {
+            this.studenter = new ArrayList<Student>();
+            this.antStud = 0;
+        }
         public int getAntStud() {
             return antStud;
         }
-
+        public List<Student> getStudenter() {
+            return studenter;
+        }
+        public void addStudent(Scanner S) {
+            System.out.println("Navn:");
+            String navn = S.nextLine();
+            System.out.println("Oppgaver gjort:");
+            int oppg = Integer.parseInt(S.nextLine());
+            Student s = new Student(navn, oppg);
+            this.studenter.add(s);
+            this.antStud++;
+        }
+        public void increaseAntOppg(Scanner S) {
+            System.out.println("Navn:");
+            String navn = S.nextLine();
+            System.out.println("Antall oppgaver løst (Legges til tidligere total):");
+            int oppg = Integer.parseInt(S.nextLine());
+            for (Student student : studenter) {
+                if (student.getNavn().equals(navn)) {
+                    student.increaseAntOppg(oppg);
+                }
+            }
+        }
+        public void fintAntOppg(Scanner S) {
+            System.out.println("Navn:");
+            String navn = S.nextLine();
+            for (Student student : studenter) {
+                if (student.getNavn().equals(navn)) {
+                    System.out.println(student.getAntOppg());
+                }
+            }
+        }
     }
 }

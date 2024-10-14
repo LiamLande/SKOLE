@@ -46,7 +46,10 @@ public class p1{
                     System.out.println("Sluttdato:");
                     String temp3 = S.nextLine();
                     int d = Integer.parseInt(temp3);
-                    reg.findArrangements(false, "", c);
+                    reg.findArrangementsBetweenDates(c, d);
+                    break;
+                case "5":
+                    reg.allArrangements(S);
                     break;
                 default:
                     on = false;

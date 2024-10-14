@@ -1,9 +1,7 @@
 /**
  * ArrangementRegister
  */
-import java.util.ArrayList;
-import java.util.Scanner;
-
+import java.util.*;
 public class ArrangementRegister {
 
     private ArrayList<Arrangement> register;
@@ -59,6 +57,45 @@ public class ArrangementRegister {
             }
         }
         for (Arrangement arrangement : sortedReg) {
+            arrangement.printUt();
+        }
+    }
+    public void findArrangementsBetweenDates(int Date1, int Date2){
+        ArrayList<Arrangement> sortedReg = new ArrayList<Arrangement>();
+        for (Arrangement arrangement : register) {
+            if (arrangement.getTime() >= Date1 && arrangement.getTime() <= Date2) {
+                sortedReg.add(arrangement);
+            }
+        }
+        for (Arrangement arrangement : sortedReg) {
+            arrangement.printUt();
+        }
+        sortedReg.sort(Comparator.comparing(Arrangement::getTime));
+        for (Arrangement arrangement : sortedReg) {
+            arrangement.printUt();
+        }
+    }
+    public void allArrangements(Scanner S){
+        System.out.println("Velg kriterie for sortering:");
+        System.out.println("1. Sted");
+        System.out.println("2. Dato");
+        System.out.println("3. Type");
+        int kriterie = 0;
+        kriterie = S.nextInt();
+        switch (kriterie) {
+            case 1:
+                register.sort(Comparator.comparing(Arrangement::getLocation));
+                break;
+            case 2:
+                register.sort(Comparator.comparing(Arrangement::getTime));
+                break;
+            case 3:
+                register.sort(Comparator.comparing(Arrangement::getType));
+                break;
+            default:
+                break;
+        }
+        for (Arrangement arrangement : register) {
             arrangement.printUt();
         }
     }
