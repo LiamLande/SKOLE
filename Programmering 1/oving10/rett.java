@@ -12,7 +12,7 @@ public class rett {
         this.Oppskrift = oppskrift;
     }
     public String getNavn() {
-        return Navn;
+        return Navn; 
     }
     public String getOppskrift() {
         return Oppskrift;

@@ -15,7 +15,7 @@ public class p1{
 
             System.out.println("3. Finne arrengement på gitt dato");
 
-            System.out.println("4. Finne arrangement innenfor tidsramme");
+            System.out.println("4. Finne arrang1ement innenfor tidsramme");
 
             System.out.println("5. Liste over alle arrangement sortert etter kriterie.");
             
