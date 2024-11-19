@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "P91",
+            "request": "launch",
+            "mainClass": "P91",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "p111",
+            "request": "launch",
+            "mainClass": "p111",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "testing",
+            "request": "launch",
+            "mainClass": "testing",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
+            "name": "p2",
+            "request": "launch",
+            "mainClass": "p2",
+            "projectName": "SKOLE_e7f84216"
+        },
+        {
+            "type": "java",
             "name": "P81",
             "request": "launch",
             "mainClass": "P81",

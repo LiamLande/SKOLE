@@ -18,11 +18,9 @@ public class P71 {
     public static class NyString{
         private static String main;
 
-        public NyString(String A){
-            main = A;
+        public NyString(String Main){
+            main = Main;
         }
-        
-        
         
         public String forkortString() {
             String[] words = main.split(" ");
