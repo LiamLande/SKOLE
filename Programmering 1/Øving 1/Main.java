@@ -1,9 +1,20 @@
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Main{
     public static void main(String [] args) {
-        
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date dateWithoutTime;
+        try {
+            dateWithoutTime = sdf.parse(sdf.format(new Date()));
+            System.out.println(sdf.parse(sdf.format(dateWithoutTime)));
 
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        
         //Making an array of test cases in doubles, since centimeters are often used with millimeters.
         double[] testCases = {21, 2.54, 63.2, 205};
         for (double centimeter : testCases) {
