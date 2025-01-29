@@ -9,3 +9,4 @@ def implisittEuler(x_start,t_start,t_slutt,steg):
     for k in range(steg):
         x = x + h*(tk[k] - x)
     return x
+
