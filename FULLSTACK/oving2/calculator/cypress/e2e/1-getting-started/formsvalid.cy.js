@@ -24,8 +24,6 @@ describe('Forms', () => {
     //   .get('spy')
     //   .contains('Success:')
 
-    cy.get('@consoleLog')
-      .
-      .should('contain', 'Success:')
+    cy.get('@consoleLog').cy.should('contain', 'Success:')
   })
 })
